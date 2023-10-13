@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    /* Default style for the div */
+    
+    .resizable-div {
+        height: 200px;
+        background-color: lightblue;
+        margin: 20px;
+    }
+    /* Media query for screens wider than 600px */
+    
+    @media only screen and (min-width: 600px) {
+        .resizable-div {
+            width: 1200px;
+            height: 900px;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .resizable-div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    }
+</style>
+
+<body>
+    <div class="resizable-div"></div>
+</body>
+
+</html>

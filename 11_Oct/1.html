@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    /* CSS to hide the UI by default */
+    
+    .hidden {
+        display: none;
+    }
+</style>
+
+<body>
+    <div id="ui" class="hidden">
+
+    </div>
+
+    <script>
+        const userInput = prompt("Enter 1 to show UI, or 0 to hide it:");
+
+        // Check user input and use a ternary operator to show or hide the UI
+        const uiElement = document.getElementById("ui");
+        uiElement.style.display = userInput === "1" ? "block" : "none";
+    </script>
+</body>
+
+</html>
